@@ -6,6 +6,15 @@ $(document).ready(function() {
     slidesToScroll: 1,
     infinite: false,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 880,
+        settings: {
+          arrows: false,
+          slidesToShow: 2
+        }
+      },
+    ]
   });
 
   $('.slider_nav').slick({
@@ -133,6 +142,31 @@ $(document).ready(function() {
     thisParent.find('.selected').text($(this).text())
     thisParent.find('.selects').slideUp(300)
     thisParent.removeClass('active')
+  })
+
+  $(window).on('load resize', function(){
+    if($(window).width() < 768){
+      if(!$('.advan_cards').hasClass('advan_slder')){
+        $('.advan_cards').addClass('advan_slder')
+        $('.advan_cards').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+          ]
+        });
+      } 
+    } else{
+      $('.advan_cards.slick-initialized').slick('unslick')
+      $('.advan_cards').removeClass('advan_slder')
+    }
   })
 
 })

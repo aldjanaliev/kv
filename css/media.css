@@ -283,11 +283,92 @@
 	.app_socs{
 		flex-direction: column;
 	}
-	.app_soc{
+	.app_soc__txt{
 		width: 100%;
 		max-width: 100%;
+		padding-bottom: 30px;
 	}
 	.app_socs .sec_name{
 		padding-bottom: 18px;
+	}
+	.app_soc__tel{
+		align-self: flex-end;
+		width: 580px;
+	}
+	.app_vector{
+    width: 142px;
+    height: 202px;
+    bottom: 36px;
+    left: -16px;
+	}
+	.app_vector::before {
+    width: 780px;
+    height: 329px;
+    bottom: 80px;
+    left: 28px;
+	}
+	.app_tel-img__2 img{
+		right: -9px;
+	}
+	.app_tel-img__3 img{
+		right: -35px;
+	}
+	.review{
+		padding: 53px 0 96px;
+	}
+	.review .sec_name{
+		margin-bottom: 24px;
+	}
+	.review .slick-dots{
+		top: -57px;
+	}
+	.rev_slide{
+		padding-right: 10px;
+	}
+	.rev_slider .slick-list::before{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 51px;
+		z-index: 10;
+		background: linear-gradient(90deg, rgba(244, 244, 244, 0) 0%, #F4F4F4 100%);
+	}
+	.rev_slider{
+		padding-right: 0;
+		margin-right: -15px;
+	}
+	footer{
+		padding: 65px 0 30px;
+	}
+	.foot{
+		margin-bottom: 10px;
+		flex-wrap: wrap;
+	}
+	.foot > div{
+		width: calc(50% - 10px);
+		padding-bottom: 20px;
+	}
+	.foot_logo{
+		margin-bottom: 12px;
+	}
+	.foot_desc{
+		margin-bottom: 17px;
+	}
+	.advan .sec_name{
+		margin-bottom: 65px;
+		text-align: center;
+	}
+	.advan .slick-dots{
+		top: -50px;
+    left: 0;
+    justify-content: center;
+	}
+	.advan_card-in {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	}
+	.advan .slick-arrow{
+		top: -30px;
 	}
 }
