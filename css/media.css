@@ -1,2 +1,293 @@
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1900px) {
+	.advan_cards::before{
+		display: none;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.main_form{
+		flex-wrap: wrap;
+		max-width: 538px;
+		margin: 0 auto;
+		padding: 20px 0 0;
+	}
+	.main_input,
+	.main_btn{
+		width: calc(50% - 20px);
+	}
+	.main_tit p{
+		max-width: 620px;
+		margin: 0 auto 2px;
+	}
+	.main::after{
+		left: -40px;
+	}
+	.advan_card-in{
+		padding: 20px;
+	}
+	.advan_btn{
+		bottom: -20px;
+	}
+	.tabs{
+		width: 550px;
+	}
+	.procedure_content{
+		width: calc(100% - 550px);
+	}
+	.help_content{
+		width: calc(100% - 350px);
+	}
+	.app_cards::before,
+	.app_cards::after{
+		display: none;
+	}
+	.app_cards{
+		margin: 0 -15px;
+	}
+	.slick-dots{
+		right: 15px;
+	}
+	.slick-arrow{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #FFFFFF;
+		background-size: 10px 17px;
+		background-repeat: no-repeat;
+		box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+	}
+	.slick-prev{
+		left: 0;
+		z-index: 7;
+	}
+	.foot_txts{
+		width: 230px;
+		padding-right: 10px;
+	}
+	.rev_img{
+		width: 217px;
+		margin: -10px auto 7px;
+	}
+	.advan_cards{
+		margin: 0 -15px;
+	}
+	.main_cards{
+		margin: 0 -15px 60px;
+	}
+	.dsk{
+		display: none;
+	}
+	.lg{
+		display: block;
+	}
+	.res{
+		overflow: hidden;
+	}
+	.what_img img{
+		height: 100%;
+		width: auto;
+		min-width: 100%;
+	}
+	.what{
+		padding-bottom: 120px;
+	}
+}
+@media screen and (max-width: 990px) {
+	.head_bot{
+		padding-top: 20px;
+	}
+	.main{
+		padding: 20px 0 60px;
+	}
+	.main::after{
+		bottom: 44px;
+		width: 154px;
+    height: 190px;
+		background-size: 100% 100%;
+    left: 0;
+	}
+	.main_card{
+		padding: 0 10px;
+		width: 33.3%;
+	}
+	.main_cards{
+		margin: 0 -10px 60px;
+	}
+	.main_form{
+		max-width: 508px;
+	}
+	.main_form_desc{
+		max-width: 508px;
+		text-align: left;
+		margin: 0 auto;
+	}
+	.res_items{
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.res_item__img{
+		width: 50%;
+		max-width: 340px;
+		padding-bottom: 20px;
+	}
+	.res_item:first-child{
+		width: 50%;
+	}
+	.res_item:last-child{
+		width: 100%;
+		columns: 2;
+	}
+	.res_imgs::before{
+		right: -50px;
+		background-size: 100% 100%;
+    width: 193px;
+    height: 273px;
+    bottom: -140px;
+	}
+	.res_imgs{
+		height: 275px;
+	}
+	.res_imgs .play::after{
+		width: 40px;
+		height: 40px;
+		background-size: 50% 50%;
+	}
+	.res{
+		padding: 30px 0;
+	}
+	.res .sec_name{
+		margin-bottom: 30px;
+	}
+	.advan_cards{
+		margin: 0 -7px;
+	}
+	.advan_card{
+		padding: 0 7px;
+		width: 33.3%;
+	}
+	.advan{
+		padding: 35px 0 0;
+	}
+	.advan .sec_name{
+		margin-bottom: 25px;
+	}
+	.what_left .what_img{
+		display: none;
+	}
+	.what .body_list{
+		padding-bottom: 30px;
+	}
+	.what_right .what_img__1{
+		display: block;
+	}
+	.what_img{
+		margin-bottom: 22px;
+	}
+	.what_wrap .what_right{
+		width: 301px;
+	}
+	.what_img{
+		height: 156px;
+	}
+	.what_wrap .what_left{
+		width: 390px;
+		padding-right: 36px;
+	}
+	.what_wrap{
+		justify-content: flex-start;
+	}
+	.what{
+		padding-bottom: 75px;
+	}
+	.what_left .sec_name{
+		display: block;
+		margin-bottom: 20px;
+	}
+	.dsc{
+		display: none;
+	}
+	.md{
+		display: block;
+	}
+	.what_wrap{
+		margin-top: 0;
+	}
+	.what_left{
+		justify-content: flex-start;
+	}
+	.play::after{
+		width: 50px;
+		height: 50px;
+		background-size: 40% 40%;
+	}
+	.procedure_content::before{
+		display: none;
+	}
+	.procedure_in{
+		flex-direction: column;
+	}
+	.procedure_content{
+		padding: 0 0 40px;
+		width: 100%;
+		position: relative;
+	}
+	.procedure_ic{
+		position: relative;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		bottom: 62px;
+	}
+	.procedure{
+		padding: 57px 0 70px;
+	}
+	.tabs{
+		width: 100%;
+	}
+	.help .sec_name{
+		margin-bottom: 7px;
+		max-width: 660px;
+	}
+	.help_content{
+    width: calc(100% - 320px);
+	}
+	.help{
+		padding: 35px 0 40px;
+	}
+	.help_form .form_item{
+		width: calc(50% - 5px);
+	}
+	.help_form .form_item:nth-child(3){
+		order: -1;
+	}
+	.help_form .form_item:first-child{
+		order: -1;
+	}
+	.help_form .form_item:nth-child(2){
+		width: 100%;
+	}
+	.help_form .form_item:last-child{
+		width: 100%;
+	}
+	.help_in{
+		align-items: center;
+	}
+	.app{
+		padding: 70px 0;
+	}
+	.app .slick-dots{
+		top: -30px;
+	}
+	.app_cards{
+		padding-bottom: 30px;
+	}
+	.app_socs{
+		flex-direction: column;
+	}
+	.app_soc{
+		width: 100%;
+		max-width: 100%;
+	}
+	.app_socs .sec_name{
+		padding-bottom: 18px;
+	}
 }

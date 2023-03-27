@@ -111,6 +111,7 @@ body{
 	line-height: 31px;
 	position: relative;
 	padding-left: 39px;
+	letter-spacing: normal;
 	font-family: 'Montserrat', arial, sans-serif;
 }
 .head_wa::before{
@@ -728,7 +729,6 @@ footer{
 	letter-spacing: normal;
 }
 .help_desc a{
-	display: inline-block;
 	border-bottom: 1px solid #fff;
 	transition: 0.3s;
 }
@@ -939,7 +939,6 @@ footer{
 }
 .advan{
 	padding: 115px 0 35px;
-	overflow: hidden;
 }
 .advan .sec_name{
 	margin-bottom: 60px;
@@ -1054,6 +1053,8 @@ footer{
 	display: block;
 	position: relative;
 	margin-bottom: 40px;
+	max-height: 296px;
+	height: 50%;
 }
 .what_img::before{
 	content: '';
@@ -1072,6 +1073,7 @@ footer{
 }
 .what_vid{
 	display: block;
+	height: 100%;
 }
 .play{
 	position: relative;
@@ -1080,8 +1082,8 @@ footer{
 	content: '';
 	position: absolute;
 	background: url(../img/icons/play.png) center no-repeat;
-	width: 86px;
-	height: 86px;
+	width: 82px;
+	height: 82px;
 	border: 4px solid rgba(255,255,255,0.75);
 	border-radius: 50%;
 	top: 50%;
@@ -1117,14 +1119,12 @@ footer{
 }
 .what_left .what_img{
 	margin-bottom: 0;
+	height: 100%;
 }
 .what_left{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-.what_left > *{
-	height: calc(50% - 20px);
 }
 .what_img__3{
 	margin-bottom: 0;
@@ -1133,6 +1133,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	height: calc(50% - 40px);
 }
 .what .body_list{
 	padding-right: 0;
@@ -1209,8 +1210,8 @@ footer{
 	align-self: flex-start;
 }
 .res_imgs .play::after{
-	width: 64px;
-	height: 64px;
+	width: 60px;
+	height: 60px;
 	border-width: 2px;
 	background-image: url(../img/icons/play-sm.png);
 }
@@ -1727,4 +1728,11 @@ footer{
 }
 .modal_rev-in .rev_txt{
 	height: auto;
+}
+.what_right .what_img__1,
+.what_left .sec_name{
+	display: none;
+}
+.md{
+	display: none;
 }
