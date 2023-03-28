@@ -13,6 +13,12 @@ $(document).ready(function() {
           arrows: false,
           slidesToShow: 2
         }
+      },{
+        breakpoint: 640,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
+        }
       },
     ]
   });
@@ -81,36 +87,74 @@ $(document).ready(function() {
   })
 
   let smHeight = $('.advan_txt').height()
-  $('.advan_card').hover(
+  $('.advan_card').hover(advanHoverOn,advanHoverOut);
+  $('.advan_cards').on('click', '.advan_card', function(){
+    console.log(123)
+    if($(this).find('.advan_txt').length > 0){
+      $('.advan_card.active').find('.advan_txt').css('height', smHeight)
+      $('.advan_card.active').removeClass("active");
+
+      $(this).addClass("active");
+      const bigHeight = $(this).find('.advan_txt-in').outerHeight()
+      $(this).find('.advan_txt').css('height', bigHeight)
+    }
+  })
+
+  function advanHoverOn() {
+    if($(this).find('.advan_txt').length > 0){
+      $(this).addClass("active");
+      const bigHeight = $(this).find('.advan_txt-in').outerHeight()
+      $(this).find('.advan_txt').css('height', bigHeight)
+   }
+  }
+  function advanHoverOut() {
+    if($(this).find('.advan_txt').length > 0){
+      $(this).removeClass("active");
+      $(this).find('.advan_txt').css('height', smHeight)
+    }
+  }
+
+
+
+  $('.what_img').hover(
     function() {
-     if($(this).find('.advan_txt').length > 0){
-        $(this).addClass("active");
-        const bigHeight = $(this).find('.advan_txt-in').outerHeight()
-        $(this).find('.advan_txt').css('height', bigHeight)
-     }
-    }, function() {
-      if($(this).find('.advan_txt').length > 0){
-        $(this).removeClass("active");
-        $(this).find('.advan_txt').css('height', smHeight)
+      if(!$(this).closest('.what_mob').length > 0){
+        if(!$(this).hasClass('active')){
+          $('.what_img.active').removeClass('active')
+          $(this).addClass("active")
+          const tabNum = +$(this).attr('data-tab')
+          $('.what_body-wrap .what_body.active').removeClass('active')
+          $(`.what_body-wrap .what_body[data-body="${tabNum}"]`).addClass('active')
+          setTimeout(()=>{
+            $('.what_body-wrap .what_body .what_body-in.active').removeClass("active")
+            $('.what_body-wrap .what_body.active .what_body-in').addClass("active")
+          },10)
+        }
       }
     }
   );
 
-  $('.what_img').hover(
-    function() {
-      if(!$(this).hasClass('active')){
-        $('.what_img.active').removeClass('active')
-        $(this).addClass("active")
-        const tabNum = +$(this).attr('data-tab') - 1
-        $('.what_body-wrap .what_body.active').removeClass('active')
-        $('.what_body-wrap .what_body').eq(tabNum).addClass('active')
-        setTimeout(()=>{
-          $('.what_body-wrap .what_body .what_body-in.active').removeClass("active")
-          $('.what_body-wrap .what_body.active .what_body-in').addClass("active")
-        },10)
-      }
+  $('.what_mob .what_img').on('click', function(){
+    if(!$(this).hasClass('active')){
+      $('.what_img.active').removeClass('active')
+      $(this).addClass("active")
+      const tabNum = +$(this).attr('data-tab')
+      $('.what_mob .what_body.active').slideUp(300)
+      $(`.what_mob .what_body[data-body="${tabNum}"]`).addClass('active')
+      $(`.what_mob .what_body[data-body="${tabNum}"]`).slideDown(300)
     }
-  );
+  })
+
+  $('.what_open').on('click', function(){
+    if($(this).text() === "Показать еще"){
+      $(this).text("Скрыть")
+      $(this).closest('.what_body').find('.what_txt-block').slideDown(300)
+    } else{
+      $(this).text("Показать еще")
+      $(this).closest('.what_body').find('.what_txt-block').slideUp(300)
+    }
+      
+  })
 
   $('.res_img').hover(
     function() {
@@ -142,6 +186,16 @@ $(document).ready(function() {
     thisParent.find('.selected').text($(this).text())
     thisParent.find('.selects').slideUp(300)
     thisParent.removeClass('active')
+  })
+
+  $('.res_item-btn').on('click', function(){
+    if($(this).text() === 'Показать еще'){
+      $(this).text('Скрыть')
+      $('.res_item.sm-n').slideDown(300)
+    } else{
+      $(this).text('Показать еще')
+      $('.res_item.sm-n').slideUp(300)
+    }
   })
 
   $(window).on('load resize', function(){

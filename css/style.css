@@ -337,6 +337,7 @@ footer{
 	background-size: cover;
 	color: #fff;
 	padding: 0 40px 23px;
+	display: block;
 }
 .rev_slide-in::before{
 	content: '';
@@ -535,6 +536,10 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	transition: 0.3s;
+}
+.app_card-in:hover{
+	box-shadow: 0px 0px 35px #B3904E;
 }
 .app_img{
 	margin-bottom: 12px;
@@ -632,7 +637,7 @@ footer{
 }
 .app_tel-img__1 img{
 	right: 21px;
-	width: 257px;
+	width: 230px;
 	top: 0;
 	z-index: 3;
 }
@@ -714,8 +719,11 @@ footer{
 	font-family: 'CenturyGothicBold', arial, sans-serif;
 	position: absolute;
 	bottom: 4px;
-	left: 24px;
+	left: 50%;
+	transform: translateX(-50%);
 	color: #262629;
+	width: 150px;
+	text-align: center;
 }
 .help .sec_name{
 	margin-bottom: 21px;
@@ -789,14 +797,14 @@ footer{
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	background: url(../img/icons/check.png);
+	background: url(../img/icons/check.svg);
 	background-size: 100% 100%;
 	width: 22px;
 	height: 17px;
 }
 .procedure_ic{
 	width: 141px;
-	height: 40px;
+	height: 46px;
 	background: url(../img/logo_min.png);
 }
 .procedure_content{
@@ -922,11 +930,12 @@ footer{
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	background: url(../img/icons/ch_rad.png);
+	background: url(../img/icons/ch_rad.svg);
 	width: 20px;
 	height: 20px;
 }
 .body_tag{
+	font-family: 'CenturyGothicBold', arial, sans-serif;
 	position: absolute;
 	right: -5px;
 	bottom: -18px;
@@ -974,6 +983,10 @@ footer{
 	position: relative;
 	z-index: 0;
 	min-height: 100%;
+	transition: 0.3s;
+}
+.advan_card-in:hover{
+	box-shadow: 0px 0px 35px #B3904E;
 }
 .advan_top{
 	display: flex;
@@ -1055,6 +1068,7 @@ footer{
 	margin-bottom: 40px;
 	max-height: 296px;
 	height: 50%;
+	cursor: pointer;
 }
 .what_img::before{
 	content: '';
@@ -1172,7 +1186,7 @@ footer{
 	width: 11px;
 	height: 11px;
 	transform: translateY(-50%);
-	background: url(../img/icons/check_circle.png);
+	background: url(../img/icons/check_circle.svg);
 }
 .res_imgs{
 	display: flex;
@@ -1305,6 +1319,7 @@ footer{
 	position: relative;
 	border-radius: 25px;
 	display: block;
+	transition: 0.3s
 }
 .main_card-img{
 	border-radius: 25px;
@@ -1314,6 +1329,9 @@ footer{
 }
 .main_card-img img{
 	transition: 0.3s;
+}
+.main_card-in:hover{
+	box-shadow: 0px 0px 35px #B3904E;
 }
 .main_card-in:hover img{
 	transform: scale(1.1);
@@ -1687,7 +1705,7 @@ footer{
 }
 .fancybox-stage .rev_slide-in{
 	width: 100%;
-	max-width: 587px;
+	max-width: 800px;
 	padding: 40px 30px;
 	height: auto;
 	min-height: 350px;
@@ -1695,10 +1713,11 @@ footer{
 .modal_rev-in{
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 }
 .modal_rev-content{
-	width: 275px;
+	width: calc(100% - 251px);
+	max-width: 500px;
 }
 .modal_rev-in .rev_txt{
 	font-family: 'Montserrat';
@@ -1748,6 +1767,7 @@ footer{
 	z-index: 10;
 	padding-left: 40px;
 	transition: 0.3s;
+	white-space: nowrap;
 }
 .what_ic::before{
 	content: '';
@@ -1759,9 +1779,24 @@ footer{
 	width: 33px;
 	height: 40px;
 }
+.what_img.active .what_ic,
 .what_img:hover .what_ic{
 	opacity: 0;
 }
 .dib{
 	display: inline-block;
+}
+.sm-b{
+	display: none;
+}
+.res_item-btn{
+	display: none;
+	cursor: pointer;
+}
+.fancybox-is-open .fancybox-bg{
+	background: #F4F4F4;
+	opacity: 0.9;
+}
+.what_mob{
+	display: none;
 }

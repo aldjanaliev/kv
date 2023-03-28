@@ -372,3 +372,422 @@
 		top: -30px;
 	}
 }
+@media screen and (max-width: 770px) {
+	.container{
+		max-width: 500px;
+	}
+	.sm-b{
+		display: block;
+	}
+	.sm-n{
+		display: none;
+	}
+	.menu_li{
+		display: none;
+	}
+	.menu_li__mob{
+		display: block;
+	}
+	.menu .head_wa{
+		display: block;
+		height: 31px;
+	}
+	li.sm-b{
+		display: flex;
+		align-items: center;
+		height: 31px;
+	}
+	li .head_tel{
+		margin: 0 0 0 19px;
+	}
+	.welcome_in{
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+	.main_card{
+		width: 50%;
+	}
+	.main_cards{
+		margin-bottom: 20px;
+	}
+	.main::after{
+		display: none;
+	}
+	.main_input{
+		order: -1;
+		width: calc(50% - 8px);
+	}
+	.input__option{
+		order: 0;
+		width: 100%;
+	}
+	.main_btn{
+		width: 100%;
+	}
+	.main_btn .btn{
+		width: 238px;
+		margin: 0 auto 30px;
+		display: block;
+	}
+	.sec_name{
+		text-align: center;
+	}
+	.ch_list li{
+		font-size: 12px;
+		line-height: 16px;
+		margin-bottom: 9px;
+	}
+	.res .sec_name{
+		margin-bottom: 25px;
+	}
+	.res_item{
+		width: 100%!important;
+	}
+	.res_item:last-child{
+		columns: 1;
+	}
+	.res_item__img{
+		width: 100%;
+		order: 1;
+	}
+	.help_desc{
+		text-align: center;
+		max-width: 335px;
+		margin: 0 auto;
+	}
+	.res_imgs{
+		height: 310px;
+	}
+	.res_imgs::before {
+    right: -40px;
+    width: 169px;
+    height: 234px;
+    bottom: -101px;
+	}
+	.res_item-btn{
+		font-size: 12px;
+		line-height: 15px;
+		color: #552F36;
+		letter-spacing: normal;
+		font-family: 'CenturyGothicBold', arial, sans-serif;
+		margin-bottom: 16px;
+	}
+	.sec_name{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.main_card-name{
+		font-size: 12px;
+		line-height: 1.4;
+	}
+	.main_list li{
+		padding: 10px;
+		min-height: auto;
+		font-size: 11px;
+    line-height: 13px;
+	}
+	.main_card-name{
+		height: 55px;
+	}
+	.main_list{
+		top: 50px;
+	}
+	.main_card-btn{
+		top: 19px;
+	}
+	.advan_card-in{
+		padding: 18px 8px;
+	}
+	.advan_top{
+		padding-bottom: 5px;
+	}
+	.sec_name.dsc{
+		display: block;
+		margin-bottom: 25px;
+	}
+	.what_left{
+		display: none;
+	}
+	.what_right{
+		width: 336px;
+		margin: 0 auto;
+	}
+	.foot{
+		flex-direction: column;
+		text-align: center;
+	}
+	.foot > div{
+		width: 100%;
+		padding-bottom: 25px;
+	}
+	.foot_txts{
+		order: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	footer{
+		padding: 30px 0;
+	}
+	.foot_icons{
+		justify-content: center;
+		margin-left: 10px;
+	}
+	.foot_contact{
+		max-width: 270px;
+		margin: 0 auto;
+	}
+	.foot_contact b{
+		display: block;
+	}
+	.foot_bot{
+		max-width: 288px;
+		margin: 0 auto;
+	}
+	.more_title{
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.more_in{
+		padding: 60px 40px;
+	}
+	.app_soc__tel{
+		width: 100%;
+	}
+	.app_tel-btn{
+		width: 100px;
+	}
+	.app_soc__txt p{
+		text-align: center;
+		width: 100%;
+		max-width: 336px;
+		margin: 0 auto;
+	}
+	.app_tel-img__2{
+		opacity: 0;
+	}
+	.app_tel-img__3 img{
+		right: 40px;
+	}
+	.app_tel-img__1 img{
+		right: -250px;
+		width: 240px;
+		top: -35px;
+	}
+	.app_soc__txt{
+		padding-bottom: 50px;
+	}
+	.app_vector{
+		bottom: 65px;
+	}
+	.review .sec_name{
+		margin-bottom: 55px;
+	}
+	.slick-dots{
+		left: 0;
+		right: 0;
+		justify-content: center;
+		margin-left: -20px;
+	}
+	.slick-dots li{
+		margin-left: 10px;
+	}
+	.review .slick-dots{
+		top: -45px;
+	}
+	.app_card{
+		padding: 40px 8px;
+	}
+	.app_card-in{
+		padding: 20px 15px;
+	}
+	.app_card-title{
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.app_card-list li{
+		font-size: 12px;
+		letter-spacing: normal;
+		margin-bottom: 4px;
+		line-height: 135%;
+	}
+	.app .slick-dots {
+    top: 0px;
+	}
+	.app .slick-arrow{
+		top: 8px;
+	}
+	.help .sec_name.dsc{
+		display: none;
+	}
+	.help .sec_desc{
+		text-align: center;
+		max-width: 280px;
+		margin: 0 auto 30px;
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.help_in{
+		flex-direction: column;
+	}
+	.help_content{
+		width: 100%;
+	}
+	.help_img{
+		width: 220px;
+		height: 220px;
+		margin-bottom: 30px;
+	}
+	.procedure_txt{
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.res_item-btn{
+		display: inline-block;
+	}
+	.slick-arrow{
+		width: 30px;
+		height: 30px;
+    background-size: 30% 45%;
+	}
+	.tab{
+		font-size: 12px;
+		letter-spacing: normal;
+	}
+	.tab-wrap {
+    box-shadow: 0 0px 1px 2px rgba(0,0,0,0.05);
+	}
+	.procedure_ic{
+		display: none;
+	}
+	.procedure_list li{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.procedure_content{
+		padding-bottom: 20px;
+	}
+	.body-wrap{
+		padding: 30px 10px 30px 15px;
+	}
+	.body_top{
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.body_img{
+		width: 110px;
+		height: 110px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.body_top-content{
+		width: 100%;
+		padding-left: 0;
+	}
+	.body_tit{
+		min-height: 110px;
+		width: calc(100% - 125px);
+		margin-left: 125px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.body_list{
+		padding: 0 0 40px 0;
+	}
+	.body_list li{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.body_tag{
+		width: 84px;
+		padding-left: 14px;
+		bottom: -6px;
+	}
+	.what_wrap{
+		display: none;
+	}
+	.what_mob{
+		display: block;
+		margin: 0 auto;
+		max-width: 360px;
+	}
+	.what_body-in{
+		opacity: 1;
+	}
+	.what_body{
+		padding-bottom: 30px;
+	}
+	.what_txt-block{
+		display: none;
+	}
+	.what .body_list{
+		padding-bottom: 0;
+	}
+	.what_open{
+		font-family: 'CenturyGothicBold', arial, sans-serif;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: normal;
+		text-align: left;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.body_list{
+		margin-bottom: 10px;
+	}
+	.modal_app{
+		padding: 30px 20px;
+	}
+	.app_right-block{
+		padding-bottom: 10px;
+	}
+	.app_tag {
+    font-size: 12px;
+    line-height: 115%;
+    padding: 12px 10px 12px 49px;
+    background-position: left 19px center;
+	}
+	.what_img{
+		height: 170px;
+	}
+}
+@media screen and (max-width: 560px) {
+	.modal_rev-in{
+		flex-direction: column;
+		align-items: center;
+	}
+	.modal_rev-content{
+		width: 100%;
+		margin-top: 30px;
+	}
+	.rev_img{
+		margin: 0;
+	}
+	.modal_rev-in .rev_txt{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.modal_app-in{
+		flex-direction: column;
+	}
+	.modal_app-in > div{
+		width: 100%;
+	}
+	.app_left{
+		padding-bottom: 20px;
+	}
+	.app_left-img{
+		width: 120px;
+	}
+	.advan_ic{
+		width: 28px;
+		height: 28px;
+	}
+	.advan_name{
+		font-size: 12px;
+		line-height: 14px;
+		padding-left: 8px;
+	}
+}
