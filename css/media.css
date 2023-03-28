@@ -567,11 +567,12 @@
 		opacity: 0;
 	}
 	.app_tel-img__3 img{
-		right: 40px;
+		right: auto;
+		left: -360px;
 	}
 	.app_tel-img__1 img{
 		right: -250px;
-		width: 240px;
+		width: 220px;
 		top: -35px;
 	}
 	.app_soc__txt{
@@ -789,5 +790,8 @@
 		font-size: 12px;
 		line-height: 14px;
 		padding-left: 8px;
+	}
+	.app_tel-img__3 img {
+    left: -337px;
 	}
 }
