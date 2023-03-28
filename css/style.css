@@ -296,7 +296,7 @@ footer{
 	padding: 70px 0 96px;
 }
 .review .sec_name{
-	margin-bottom: 55px;
+	margin-bottom: 15px;
 }
 .rev_slider{
 	padding-right: 40px;
@@ -305,7 +305,7 @@ footer{
 .rev_slider::before{
 	content: '';
 	position: absolute;
-	bottom: -50px;
+	bottom: -15px;
 	left: -50px;
 	width: 103px;
 	height: 102px;
@@ -316,7 +316,7 @@ footer{
 	height: auto;
 }
 .rev_slider .slick-list{
-	padding-right: 40px;
+	padding: 40px 40px 40px 0;
 }
 .rev_slider .slick-track{
 	display: flex;

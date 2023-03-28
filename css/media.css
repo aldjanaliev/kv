@@ -753,6 +753,15 @@
 	.what_img{
 		height: 170px;
 	}
+	.advan .slick-list{
+		padding: 40px 40px 40px 0;
+	}
+	.advan .sec_name{
+		margin-bottom: 25px;
+	}
+	.advan .slick-dots{
+		top: -10px;
+	}
 }
 @media screen and (max-width: 560px) {
 	.modal_rev-in{
@@ -793,5 +802,12 @@
 	}
 	.app_tel-img__3 img {
     left: -337px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.advan_name {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 5px;
 	}
 }
