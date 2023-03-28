@@ -1804,3 +1804,6 @@ footer{
 .what_mob{
 	display: none;
 }
+.fancybox-iframe, .fancybox-video{
+	background: rgba(255,255,255,0.9);
+}
