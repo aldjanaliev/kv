@@ -10,13 +10,13 @@ $(document).ready(function() {
       {
         breakpoint: 880,
         settings: {
-          arrows: false,
+          arrows: true,
           slidesToShow: 2
         }
       },{
         breakpoint: 640,
         settings: {
-          arrows: false,
+          arrows: true,
           slidesToShow: 1
         }
       },
@@ -89,7 +89,6 @@ $(document).ready(function() {
   let smHeight = $('.advan_txt').height()
   $('.advan_card').hover(advanHoverOn,advanHoverOut);
   $('.advan_cards').on('click', '.advan_card', function(){
-    console.log(123)
     if($(this).find('.advan_txt').length > 0){
       $('.advan_card.active').find('.advan_txt').css('height', smHeight)
       $('.advan_card.active').removeClass("active");
@@ -212,6 +211,11 @@ $(document).ready(function() {
               breakpoint: 700,
               settings: {
                 slidesToShow: 2
+              }
+            },{
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 1
               }
             },
           ]

@@ -158,7 +158,7 @@
 		margin-bottom: 30px;
 	}
 	.advan_cards{
-		margin: 0 -7px;
+		margin: 0;
 	}
 	.advan_card{
 		padding: 0 7px;
@@ -193,7 +193,7 @@
 		padding-right: 36px;
 	}
 	.what_wrap{
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	.what{
 		padding-bottom: 75px;
@@ -374,7 +374,7 @@
 }
 @media screen and (max-width: 770px) {
 	.container{
-		max-width: 500px;
+		max-width: 530px;
 	}
 	.sm-b{
 		display: block;
@@ -571,7 +571,7 @@
 		left: -360px;
 	}
 	.app_tel-img__1 img{
-		right: -250px;
+		right: -235px;
 		width: 220px;
 		top: -35px;
 	}
@@ -762,18 +762,54 @@
 	.advan .slick-dots{
 		top: -10px;
 	}
+	.advan_btn{
+		bottom: -40px;
+	}
+	.help_txt{
+		font-size: 9px;
+		line-height: 1;
+		bottom: 1px;
+	}
+	.help_img::before{
+		border-width: 11px;
+	}
+	.help_img{
+		width: 152px;
+		height: 152px;
+	}
 }
 @media screen and (max-width: 560px) {
-	.modal_rev-in{
-		flex-direction: column;
-		align-items: center;
-	}
 	.modal_rev-content{
 		width: 100%;
-		margin-top: 30px;
+	}
+	.modal_rev-in{
+		position: relative;
+	}
+	.modal_rev-in .rev_img{
+		position: absolute;
+		left: 15px;
+		top: 0;
+		width: 85px;
+		margin: 0;
+	}
+	.modal_rev-in .rev_img::before{
+		border-width: 10px;
+	}
+	.modal_rev-in .rev_name{
+		padding-top: 35px;
+		margin-left: 130px;
+	}
+	.modal_rev-in .rev_desc{
+		margin-left: 130px;
+	}
+	.modal_rev-in .rev_txt{
+		padding-top: 30px;
+	}
+	.fancybox-stage .rev_slide-in{
+		min-height: auto;
 	}
 	.rev_img{
-		margin: 0;
+		margin: 0 0 7px;
 	}
 	.modal_rev-in .rev_txt{
 		font-size: 12px;
@@ -809,5 +845,14 @@
     font-size: 11px;
     line-height: 12px;
     padding-left: 5px;
+	}
+	.advan_card{
+		height: 170px;
+	}
+	.advan_btn{
+		bottom: 0;
+	}
+	.app_tel-img__3 img {
+    left: -329px;
 	}
 }
