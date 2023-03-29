@@ -132,7 +132,7 @@ body{
 	width: 31px;
 	height: 31px;
 	border-radius: 50%;
-	background: #29A71A url(../img/icons/head_wa.png) center center no-repeat;
+	background: #29A71A url(../img/icons/wa.svg) center center no-repeat;
 }
 .head_top{
 	padding: 17px 0;
@@ -951,10 +951,11 @@ footer{
 .body_tag{
 	font-family: 'CenturyGothicBold', arial, sans-serif;
 	position: absolute;
-	right: -5px;
+	right: -10px;
 	bottom: -18px;
 	line-height: 46px;
-	border: 1px solid #4F4F4F;
+	border: 1px solid #ccc;
+	border-right: 0;
 	border-radius: 12px 0px 0px 12px;
 	font-size: 14px;
 	padding-left: 20px;
@@ -1818,7 +1819,4 @@ footer{
 }
 .what_mob{
 	display: none;
-}
-.fancybox-iframe, .fancybox-video{
-	background: rgba(255,255,255,0.9);
 }

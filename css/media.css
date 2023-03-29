@@ -4,6 +4,9 @@
 	}
 }
 @media screen and (max-width: 1200px) {
+	.rev_slider .slick-prev{
+		left: -15px;
+	}
 	.main_form{
 		flex-wrap: wrap;
 		max-width: 538px;
@@ -499,7 +502,7 @@
 		padding: 18px 8px;
 	}
 	.advan_top{
-		padding-bottom: 5px;
+		padding-bottom: 10px;
 	}
 	.sec_name.dsc{
 		display: block;
@@ -779,6 +782,9 @@
 	}
 }
 @media screen and (max-width: 560px) {
+	.advan_name br{
+		display: none;
+	}
 	.modal_rev-content{
 		width: 100%;
 	}
@@ -838,6 +844,24 @@
 	}
 	.app_tel-img__3 img {
     left: -337px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.advan_card-in{
+		padding: 20px;
+	}
+	.advan_txt{
+		opacity: 1;
+		height: auto;
+	}
+	.advan_prev{
+		opacity: 0;
+	}
+	.advan_btn{
+		display: none;
+	}
+	.advan_card__simple .advan_prev{
+		opacity: 1;
 	}
 }
 @media screen and (max-width: 400px) {
