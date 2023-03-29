@@ -1543,6 +1543,7 @@ footer{
 	color: rgba(60, 60, 67, 0.6);
 	z-index: 2;
 	background: #fff;
+	letter-spacing: normal;
 }
 .selected:hover{
 	color: #B3904E;
@@ -1560,8 +1561,9 @@ footer{
 	transition: 0.3s;
 }
 .select{
-	padding: 8px 2px 8px 16px;
+	padding: 8px 5px 8px 16px;
 	transition: 0.3s;
+	letter-spacing: normal;
 }
 .select:hover{
 	background: #F5F5F5;
@@ -1682,7 +1684,7 @@ footer{
   letter-spacing: -0.04em;
   padding-right: 1px;
 }
-.app_right-block span{
+.app_right-block > span{
 	font-size: 16px;
 	font-family: 'CenturyGothicBold', arial, sans-serif;
 	line-height: 20px;
@@ -1819,4 +1821,199 @@ footer{
 }
 .what_mob{
 	display: none;
+}
+.modal_price{
+	max-width: 844px;
+}
+.modal{
+	padding: 30px 38px 60px;
+}
+.modal_tit{
+	font-size: 24px;
+	line-height: 29px;
+	font-family: 'CenturyGothicBold', arial, sans-serif;
+	text-align: center;
+	max-width: 530px;
+	margin: 0 auto 10px;
+}
+.modal_price .modal_content{
+	max-width: 504px;
+	margin-left: auto;
+}
+.modal_price .main_input{
+	width: calc(50% - 12px);
+	margin-bottom: 20px;
+}
+.modal_price .main_input.input__option{
+	width: 100%;
+}
+.modal_price .main_form{
+	padding-bottom: 14px;
+}
+.modal_rads-tit{
+	font-size: 16px;
+	font-family: 'CenturyGothicBold', arial, sans-serif;
+	line-height: 20px;
+	padding-bottom: 16px;
+}
+.modal_rads{
+	display: flex;
+	justify-content: space-between;
+}
+.modal_rad{
+	width: 32%;
+	max-width: 149px;
+	margin-bottom: 30px;
+	border: 1px solid #B3904E;
+	background: transparent;
+	transition: 0.3s;
+	cursor: pointer;
+	border-radius: 14px;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.07em;
+	font-family: 'CenturyGothicBold', arial, sans-serif;
+	color: #B3904E;
+}
+.modal_rad:hover,
+.modal_rad.active{
+	color: #fff;
+	background: #B3904E;
+}
+.modal_rads{
+	border-bottom: 1px solid #D9D9D9;
+}
+.modal_rad-txt{
+	display: flex;
+	height: 39px;
+	align-items: center;
+	justify-content: center;
+}
+.rad{
+	display: none;
+}
+.modal_rad__wa i{
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/icons/wa-y.svg);
+}
+.modal_rad__tg i{
+	width: 26px;
+	background-image: url(../img/icons/tg-y.svg);
+	height: 24px;
+}
+.modal_rad__sms i{
+	width: 29px;
+	background-image: url(../img/icons/mes-y.svg);
+	height: 24px;
+}
+.modal_rad i{
+	margin-right: 7px;
+	transition: 0.3s;
+	background-size: 100% 100%;
+	position: relative;
+}
+.modal_rad i::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: 100% 100%;
+	opacity: 0;
+	transition: 0.3s;
+}
+.modal_rad:hover i::before,
+.modal_rad.active i::before{
+	opacity: 1;
+}
+.modal_rad__wa i::before{
+	background-image: url(../img/icons/wa-w.svg);
+}
+.modal_rad__tg i::before{
+	background-image: url(../img/icons/tg-w.svg);
+}
+.modal_rad__sms i::before{
+	background-image: url(../img/icons/mes-w.svg);
+}
+.modal_btns{
+	padding-top: 36px;
+	display: flex;
+	justify-content: space-between;
+}
+.modal_btns .help_desc{
+	max-width: 308px;
+	padding-right: 10px;
+}
+.modal_btns .main_btn{
+	width: 183px;
+}
+.modal_price{
+	max-width: 844px;
+	background: url(../img/modal-1.jpg) left 6px bottom 35px no-repeat;
+}
+.modal{
+	display: none;
+	width: 100%;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	background-color: #F5F5F5;
+}
+.modal_th{
+	padding: 0;
+	max-width: 733px;
+	background-image: url(../img/modal-th.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+.modal_th .modal_in{
+	padding: 36px;
+}
+.modal_txt{
+	text-align: center;
+	font-size: 16px;
+	font-family: 'CenturyGothicBold', arial, sans-serif;
+	line-height: 20px;
+	max-width: 550px;
+	margin: 0 auto 20px;
+}
+.modal_txt__last{
+	margin-bottom: 0;
+}
+a.btn{
+	display: block;
+}
+.modal_consult .main_input{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.modal_consult .main_form{
+	padding-top: 30px;
+}
+.modal_consult .main_form_desc{
+	max-width: 290px;
+	margin: 0 auto 35px;
+	text-align: center;
+}
+.modal_consult .main_form{
+	justify-content: center;
+}
+.modal .main_form{
+	flex-wrap: wrap;
+	padding: 20px 0 14px;
+}
+.modal_consult .modal_in{
+	max-width: 550px;
+	margin: 0 auto;
+}
+.modal_consult{
+	max-width: 1100px;
+	overflow: hidden;
+	background-image: url(../img/modal_consult-bg.png);
+	background-repeat: no-repeat;
+	background-position: left bottom -50px;
+}
+.main_input input{
+	width: 100%;
 }

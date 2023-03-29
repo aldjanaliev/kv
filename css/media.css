@@ -780,6 +780,43 @@
 		width: 152px;
 		height: 152px;
 	}
+	.modal_price{
+		background-image: none;
+	}
+	.modal_content{
+		margin: 0 auto;
+	}
+	.modal_price .main_btn .btn{
+		width: 100%;
+	}
+	.modal_tit{
+		font-size: 18px;
+		line-height: 1.2;
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	.modal_btns .help_desc{
+		text-align: left;
+	}
+	.modal_btns{
+		padding-top: 20px;
+	}
+	.modal_rad{
+		margin-bottom: 20px;
+	}
+	.modal_th{
+		background-image: none;
+	}
+	.modal_th .modal_in{
+		padding: 15px;
+	}
+	.modal_consult .modal_txt{
+		max-width: 330px;
+	}
+	.modal_consult{
+		background-image: none;
+		padding-bottom: 0;
+	}
 }
 @media screen and (max-width: 560px) {
 	.advan_name br{
@@ -862,6 +899,28 @@
 	}
 	.advan_card__simple .advan_prev{
 		opacity: 1;
+	}
+	.modal_price .main_input{
+		width: calc(50% - 5px);
+	}
+	.modal_price .main_form{
+		padding-bottom: 0;
+	}
+	.modal_rad{
+		font-size: 12px;
+		letter-spacing: normal;
+	}
+	.modal {
+    padding: 20px 15px;
+	}
+	.modal_btns{
+		flex-direction: column-reverse;
+	}
+	.modal_price .main_btn .btn{
+		margin-bottom: 10px;
+	}
+	.modal_btns .main_btn{
+		width: 100%;
 	}
 }
 @media screen and (max-width: 400px) {

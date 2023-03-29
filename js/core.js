@@ -134,13 +134,17 @@ $(document).ready(function() {
   );
 
   $('.what_mob .what_img').on('click', function(){
-    const tabNum = +$(this).attr('data-tab')
-    if(!$(this).hasClass('active')){
-      $(this).addClass("active")
-      $(`.what_mob .what_body[data-body="${tabNum}"]`).slideDown(300)
-    } else{
-      $(this).removeClass('active')
-      $(`.what_mob .what_body[data-body="${tabNum}"]`).slideUp(300)
+    if(!$(this).hasClass('what_img__1')){
+      const tabNum = +$(this).attr('data-tab')
+      if(!$(this).hasClass('active')){
+        $(this).addClass("active")
+        $(this).find('.what_ic').css('opacity','0')
+        $(`.what_mob .what_body[data-body="${tabNum}"]`).slideDown(300)
+      } else{
+        $(this).removeClass('active')
+        $(this).find('.what_ic').css('opacity','1')
+        $(`.what_mob .what_body[data-body="${tabNum}"]`).slideUp(300)
+      }
     }
   })
 
@@ -219,6 +223,11 @@ $(document).ready(function() {
       $('.advan_cards.slick-initialized').slick('unslick')
       $('.advan_cards').removeClass('advan_slder')
     }
+  })
+
+  $('.modal_rad').on('click', function(){
+    $(this).closest('.modal_rads').find('.modal_rad.active').removeClass('active')
+    $(this).addClass('active')
   })
 
 })

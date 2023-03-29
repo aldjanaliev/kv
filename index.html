@@ -25,7 +25,7 @@
 				<div class="head_right">
 					<a href="https://wa.me/+79252827761" class="head_wa hover-c sm-n">написать в Whatsapp</a>
 					<a href="tel:+74952555506" class="head_tel hover-c sm-n">+7(495) 2-5555-06</a>
-					<a href="#modal_callback" class="head_modal btn btn__cherry">Получить прайс</a>
+					<a href="#modal_price" class="head_modal btn btn__cherry" data-fancybox>Получить прайс</a>
 				</div>
 			</div>
 			<div class="head_bot">
@@ -942,7 +942,7 @@
 			<div class="more_in">
 				<div class="more_title">Нужны технические навыки в выполнении процедуры?</div>
 				<div class="more_btn">
-					<button class="btn btn__cherry">Узнать подробнее про варианты обучения</button>
+					<a class="btn btn__cherry" href="#modal_consult" data-fancybox>Узнать подробнее про варианты обучения</a>
 				</div>
 			</div>
 		</div>
@@ -1268,6 +1268,96 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal modal_th" id="modal_thanks">
+		<div class="modal_in">
+			<p class="modal_txt">Благодарим за обращение!</p>
+			<p class="modal_txt modal_txt__last">Ближайшее время на указанную электронную почту будет отправлен прайс лист</p>
+		</div>
+	</div>
+
+	<div class="modal modal_consult" id="modal_consult">
+		<div class="modal_in">
+			<p class="modal_txt">Нужна консультация или помощь в заказе?</p>
+			<p class="modal_txt modal_txt__last">Оставьте ваши контактные данные и наши менеджеры свяжутся с вами!</p>
+			<form class="form">
+				<div class="main_form">
+					<div class="main_input">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="main_input">
+						<input type="text" placeholder="Ваша электронная почта">
+					</div>
+					<div class="help_desc main_form_desc">Заполняя и отправляя форму, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a></div>
+					<div class="main_btn">
+						<button class="btn btn__yellow">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal modal_price" id="modal_price">
+		<div class="modal_in">
+			<div class="modal_tit">Заполните форму и мы вышлем вам прайс-лист</div>
+			<div class="modal_content">
+				<form class="form">
+					<div class="main_form">
+						<div class="main_input">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="main_input">
+							<input type="text" placeholder="Телефон">
+						</div>
+						<div class="main_input input__option">
+							<ul class="option">
+								<li class="selected">Ваш род  деятельности</li>
+								<li class="selects">
+									<ul class="select_list">
+										<li class="select">Владелец/Управляющий салона</li>
+								  	<li class="select">Парикмахер</li>
+										<li class="select">Частное лицо</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="modal_rads-tit">Куда отправить прайс-лист:</p>
+					<div class="modal_rads">
+						<label class="modal_rad modal_rad__wa">
+							<input type="radio" class="rad" name="Massanger">
+							<span class="modal_rad-txt">
+								<i></i>
+								<span>Whatsapp</span>
+							</span>
+						</label>
+						<label class="modal_rad modal_rad__tg active">
+							<input type="radio" class="rad" name="Massanger" checked>
+							<span class="modal_rad-txt">
+								<i></i>
+								<span>Telegram</span>
+							</span>
+						</label>
+						<label class="modal_rad modal_rad__sms">
+							<input type="radio" class="rad" name="Massanger">
+							<span class="modal_rad-txt">
+								<i></i>
+								<span>SMS</span>
+							</span>
+						</label>
+					</div>
+					<div class="modal_btns">
+						<div class="help_desc main_form_desc">Заполняя и отправляя форму, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a></div>
+						<div class="main_btn">
+							<button type="submit" class="btn btn__yellow">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<a href="#modal_thanks" data-fancybox>tahnkssssss</a>
 
 	<footer>
 		<div class="container">
