@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+    let iframeHead = $(".fancybox-iframe").contents().find("head");
+    console.log(iframeHead.html())
+    let iframeCSS = "<style>.iframe-css{color: #e91905}</style>";
+    $(iframeHead).append(iframeCSS);
+
+
 	// ====== inputmask ======
 
 	$('.rev_slider').slick({
