@@ -510,8 +510,8 @@ footer{
 	content: '';
 	position: absolute;
 	z-index: 1;
-	width: 252px;
-	height: 308px;
+	width: 250px;
+	height: 250px;
 	background: url(../img/app/app_bg-1.png);
 	background-size: 100% 100%;
 	top: -140px;
