@@ -2017,3 +2017,7 @@ a.btn{
 .main_input input{
 	width: 100%;
 }
+.fancybox-iframe, .fancybox-video{
+	background: #F4F4F4;
+  opacity: 0.9;
+}
