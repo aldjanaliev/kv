@@ -2017,7 +2017,7 @@ a.btn{
 .main_input input{
 	width: 100%;
 }
-body {
+.fancybox-slide--video .fancybox-content{
 	background: #F4F4F4;
-  opacity: 0.9;
+	opacity: 0.9;
 }

@@ -95,6 +95,9 @@
 	}
 }
 @media screen and (max-width: 990px) {
+	.fancybox-slide--video .fancybox-content{
+    height: 70%!important;
+	}
 	.head_bot{
 		padding-top: 20px;
 	}
@@ -376,6 +379,9 @@
 	}
 }
 @media screen and (max-width: 770px) {
+	.fancybox-slide--video .fancybox-content{
+    height: 100%!important;
+	}
 	.container{
 		max-width: 530px;
 	}
