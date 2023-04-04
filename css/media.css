@@ -374,9 +374,6 @@
 	.advan_card-in {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 	}
-	.advan .slick-arrow{
-		top: -30px;
-	}
 }
 @media screen and (max-width: 770px) {
 	.fancybox-slide--video .fancybox-content{
@@ -623,9 +620,6 @@
 	}
 	.app .slick-dots {
     top: 0px;
-	}
-	.app .slick-arrow{
-		top: 8px;
 	}
 	.help .sec_name.dsc{
 		display: none;

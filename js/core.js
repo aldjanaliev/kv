@@ -55,12 +55,12 @@ $(document).ready(function() {
     slidesToScroll: 1,
     dots: false,
     arrow: false,
+    infinite: false
     responsive: [
      {
         breakpoint: 1200,
         settings: {
           dots: true,
-          infinite: false,
           slidesToShow: 4,
           arrows: true,
         }
